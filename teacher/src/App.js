@@ -9,6 +9,7 @@ import React from 'react';
 
 function App() {
   const [username, setUsername] = React.useState("");
+  const [password, setPassword] = React.useState("");
   return (
     <Router>
       <Header />
