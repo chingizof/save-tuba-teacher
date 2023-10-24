@@ -68,13 +68,14 @@ const formContainerStyle = {
   borderRadius: '8px',
 };
 
-function SignIn({ setUsername }) {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+function SignIn({setEmail, setPassword }) {
+  const [email, setEmailValue] = useState('');  
+  const [password, setPasswordValue] = useState('');
   const navigate = useNavigate();
 
   const handleSubmit = () => {
     //user logic, auth will go here.
+  
   };
 
   return (
@@ -86,14 +87,14 @@ function SignIn({ setUsername }) {
           type="email"
           placeholder="Enter your email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setEmailValue(e.target.value)}
         />
         <StyledH4>Password:</StyledH4>
         <StyledInput
           type="password"
           placeholder="Enter your password"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setPasswordValue(e.target.value)}
         />
         <SaveButton onClick={handleSubmit}>Sign In</SaveButton>
       </FormContainer>
@@ -101,7 +102,9 @@ function SignIn({ setUsername }) {
   );
 }
 
+export default SignIn;
 
+/*
 function SignIn() {
   return (
     <div style={formContainerStyle}>
@@ -119,7 +122,8 @@ function SignIn() {
       </form>
     </div>
   );
+  
 }
+*/
 
 
-export default SignIn;

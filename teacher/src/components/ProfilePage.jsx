@@ -63,7 +63,7 @@ const SaveButton = styled.button`
 `;
 
 function ProfilePage({setUsername}) {
-  const [user,setUser] = React.useState("");
+  const [user,setUser] = React.useState(""); 
   const navigate = useNavigate();
 
   const handleFileUpload = (event) => {
