@@ -3,6 +3,7 @@ import Header from './components/Header';
 import SignIn from './components/SignIn';
 import Register from "./components/Register";
 import ProfilePage from './components/ProfilePage';
+import Home from './components/Home';
 import './App.css';
 import React from 'react';
 
@@ -12,6 +13,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
+        <Route path="/" elements={<Home />} username={username} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/profile" element={<ProfilePage setUsername={setUsername}/>} />
         <Route path="/register" element={<Register />} />
