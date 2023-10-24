@@ -14,7 +14,17 @@ function SignIn() {
   return (
     <div style={formContainerStyle}>
       <h2>Sign In</h2>
-      {/* Add your sign-in form here */}
+      <form>
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label htmlFor="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit">Sign In</button>
+      </form>
     </div>
   );
 }
