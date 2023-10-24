@@ -101,9 +101,6 @@ function SignIn({ setUsername }) {
   );
 }
 
-/*
-
-I don't really like HTML
 
 function SignIn() {
   return (
@@ -123,6 +120,6 @@ function SignIn() {
     </div>
   );
 }
-*/
+
 
 export default SignIn;
