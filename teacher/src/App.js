@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" elements={<Home />} username={username} />
-        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signin" element={<SignIn setUsername={setUsername} />} />
         <Route path="/profile" element={<ProfilePage setUsername={setUsername}/>} />
         <Route path="/register" element={<Register />} />
 
