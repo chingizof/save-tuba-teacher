@@ -59,14 +59,14 @@ const SaveButton = styled.button`
   border-radius: 4px;
 `;
 
-const formContainerStyle = {
-  maxWidth: '400px',
-  margin: '20px auto',
-  padding: '20px',
-  backgroundColor: '#fff',
-  boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-  borderRadius: '8px',
-};
+// const formContainerStyle = {
+//   maxWidth: '400px',
+//   margin: '20px auto',
+//   padding: '20px',
+//   backgroundColor: '#fff',
+//   boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+//   borderRadius: '8px',
+// };
 
 function SignIn({setEmail, setPassword }) {
   const [email, setEmailValue] = useState('');  
@@ -74,9 +74,14 @@ function SignIn({setEmail, setPassword }) {
   const navigate = useNavigate();
 
   const handleSubmit = () => {
-    //user logic, auth will go here.
-  
-  };
+    if (email.length === 0) {
+      alert('Profile could not save!')
+      return;
+    } 
+    alert('Profile saved successfully!')
+    setEmail(email);
+    navigate('/');
+  }
 
   return (
     <Container>

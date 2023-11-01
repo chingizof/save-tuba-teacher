@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { FaSearch } from 'react-icons/fa';
-import logo from '../Tuba.png';
+import logo from '../assets/Tuba.png';
 
 const headerStyle = {
   backgroundColor: '#fff',
@@ -22,11 +21,6 @@ const Title = styled(Link)`
   font-family: 'Pacifico', cursive;
   margin-top: 20px;
 `;
-
-/*const navContainerStyle = {
-  display: 'flex',
-  alignItems: 'center',
-};*/
 
 const LoginButton = styled(Link)`
   background-color: #000;
@@ -53,28 +47,6 @@ const RegisterButton = styled(Link)`
   text-align: center;  /* Ensure text is centered */
 `;
 
-
-const SearchContainer = styled.div`
-  display: flex;
-  align-items: center;
-  border: 2px solid #ddd;  /* Adjusted border color to light grey */
-  border-radius: 50px;
-  padding: 10px 10px;  /* Adjusted padding to increase height */
-  margin-right: 975px;
-  
-`;
-
-const SearchInput = styled.input`
-  border: none;
-  outline: none;
-  padding-left: 5px;
-  padding-top: 5px;  /* Added padding-top and padding-bottom to increase height */
-  padding-bottom: 5px;  /* Added padding-top and padding-bottom to increase height */
-  ::placeholder {
-    color: gray;
-  }
-`;
-
 const ButtonContainer = styled.div`
   margin-right: 50px;  /* This will push the ButtonContainer to the left */
   display: flex;
@@ -88,10 +60,6 @@ function Header() {
         <Title to="/">
           <img src={logo} alt="Logo" style={{ height: '100px' }} />
         </Title>
-        <SearchContainer>
-          <FaSearch />
-          <SearchInput placeholder="Search" />
-        </SearchContainer>
       </div>
       
       <ButtonContainer>
