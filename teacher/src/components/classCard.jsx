@@ -1,8 +1,16 @@
+import React from 'react';
+import styled from 'styled-components';
 
 
-function classCard(classname) {
+const CardWrapper = styled.div`
+    width: 350px;
+    height: 250px;
+    background-color: #D3D3D3;
+`
+
+function ClassCard({classname}) {
     return (
-        <div className="classCard">
+        <CardWrapper>
             <div className="image-container">
                 <img src={classname.image} alt="" />
             </div>
@@ -12,6 +20,8 @@ function classCard(classname) {
                     <p>{classname.description}</p>
                 </div>
             </div>
-        </div>
+        </CardWrapper>
     )
 }
+
+export default ClassCard;

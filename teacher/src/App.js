@@ -8,13 +8,13 @@ import './App.css';
 import React from 'react';
 
 function App() {
-  const [username, setUsername] = React.useState("");
+  const [username, setUsername] = React.useState("Chingiz");
   const [password, setPassword] = React.useState("");
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" elements={<Home />} username={username} />
+        <Route path="/" element={<Home username={username} />}  />
         <Route 
           path="/signin" 
           element={
