@@ -12,6 +12,7 @@ const CardWrapper = styled.div`
 * Class card is used on homepage, when teacher clicks on a class, he is redirecter to page which controlls the class
 * grades and assignments.
 */
+
 function ClassCard({classname}) { 
     return (
         <CardWrapper>

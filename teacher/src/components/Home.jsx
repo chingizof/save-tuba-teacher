@@ -9,11 +9,19 @@ const HomeWrapper = styled.div`
     border: 1px solid black;
 `
 
+
+
 function Home({username}) {
+
+    const sample_grade = {
+        image: null,
+        name: "8 A grade",
+        description: "Environmental Science"
+    }
     return(
         <HomeWrapper>
             <h1>Welcome {username}</h1>
-            <ClassCard classname={"8 A grade"} />
+            <ClassCard classname={sample_grade} />
         </HomeWrapper>
     );
 }
