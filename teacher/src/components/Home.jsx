@@ -18,10 +18,11 @@ function Home({username}) {
         name: "8 A grade",
         description: "Environmental Science"
     }
+
     return(
         <HomeWrapper>
             <h1>Welcome {username}</h1>
-            <ClassCard classname={sample_grade} />
+            <ClassCard />
         </HomeWrapper>
     );
 }
