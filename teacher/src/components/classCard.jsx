@@ -29,7 +29,7 @@ const CardWrapper = styled.div`
 //     )
 // }
 
-function ClassCard({classname}) {
+function ClassCard() {
     return (
         <></>
     );
