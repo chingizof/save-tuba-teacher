@@ -7,8 +7,12 @@ const CardWrapper = styled.div`
     height: 250px;
     background-color: #D3D3D3;
 `
-
-function ClassCard({classname}) {
+/*
+* This is a functional component that renders a class card.
+* Class card is used on homepage, when teacher clicks on a class, he is redirecter to page which controlls the class
+* grades and assignments.
+*/
+function ClassCard({classname}) { 
     return (
         <CardWrapper>
             <div className="image-container">
