@@ -1,5 +1,5 @@
 // import { ForumView } from './ForumView';
-import { ClassCard } from "./ClassCard";
+import { ClassCard } from "./ClassCard/ClassCard";
 import styled from 'styled-components';
 
 const HomeWrapper = styled.div`
