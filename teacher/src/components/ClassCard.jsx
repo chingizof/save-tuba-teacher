@@ -13,7 +13,7 @@ const CardWrapper = styled.div`
 * grades and assignments.
 */
 
-export const ClassCard = () => {
+function ClassCard() {
     return (
         <CardWrapper>
             {/* <div className="image-container">
@@ -29,10 +29,4 @@ export const ClassCard = () => {
     )
 }
 
-// export const ClassCard = () => {
-//     return (
-//         <></>
-//     );
-// }
-
-// export default ClassCard;
+export default ClassCard;
