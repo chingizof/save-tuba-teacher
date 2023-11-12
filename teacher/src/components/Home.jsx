@@ -22,7 +22,7 @@ function Home({username}) {
     return(
         <HomeWrapper>
             <h1>Welcome {username}</h1>
-            <ClassCard />
+            <ClassCard classroom={sample_grade}/>
         </HomeWrapper>
     );
 }

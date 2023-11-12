@@ -13,10 +13,10 @@ const CardWrapper = styled.div`
 * grades and assignments.
 */
 
-function ClassCard() {
+function ClassCard({classroom}) {
     return (
         <CardWrapper>
-            {/* <div className="image-container">
+            <div className="image-container">
                 <img src={classname.image} alt="" />
             </div>
             <div className="classCard-info">
@@ -24,7 +24,7 @@ function ClassCard() {
                 <div className="classCard-description">
                     <p>{classname.description}</p>
                 </div>
-            </div> */}
+            </div>
         </CardWrapper>
     )
 }
