@@ -53,7 +53,7 @@ export const Header = () => {
     <nav style={headerStyle}>
       <img src={"/Tuba.png"} alt="Logo" style={{ maxHeight: '100px'}} /> {/*max height - to keep logo in boundaries*/}
       <Link style={ headerLink } to="/"> Home </Link>
-      <Link style={ headerLink } to="/"> Help </Link>
+      <Link style={ headerLink } to="/help"> Help </Link>
       <Link style={ headerLink } to="/"> Switch Language </Link>
       
       <ButtonContainer>
