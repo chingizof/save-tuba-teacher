@@ -20,6 +20,7 @@ export const Home = ({username}) => {
         name: "8 A grade",
         description: "Environmental Science",
         image: "/classroom_pic.png",
+        id: 1,
     }
 
     return(
