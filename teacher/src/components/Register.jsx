@@ -10,7 +10,7 @@ const formContainerStyle = {
   borderRadius: '8px',
 };
 
-function Register() {
+export const Register = () => {
   return (
     <div style={formContainerStyle}>
       <h2>Register</h2>
@@ -18,5 +18,3 @@ function Register() {
     </div>
   );
 }
-
-export default Register;

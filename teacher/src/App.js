@@ -1,15 +1,18 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from './components/Header';
-import SignIn from './components/SignIn';
-import Register from "./components/Register";
-import ProfilePage from './components/ProfilePage';
-import Home from './components/Home';
+import { Header } from './components/Header';
+import { SignIn } from './components/SignIn';
+import { Register } from "./components/Register";
+import { ProfilePage } from './components/ProfilePage';
+import { Home } from './components/Home';
+import { Footer } from './components/Footer';
 import './App.css';
 import React from 'react';
 
 function App() {
   const [username, setUsername] = React.useState("Chingiz");
   const [password, setPassword] = React.useState("");
+  console.log(password)//deactivate warning
+  
   return (
     <Router>
       <Header />
@@ -28,6 +31,7 @@ function App() {
         <Route path="/register" element={<Register />} />
 
       </Routes>
+      <Footer />
     </Router>
   );
 }

@@ -1,30 +1,39 @@
 // import { ForumView } from './ForumView';
-import ClassCard from "./ClassCard.jsx";
+import { ClassCard } from "./ClassCard.jsx";
 import styled from 'styled-components';
 
 const HomeWrapper = styled.div`
     width: 100%;
     height: 100%;
     padding: 20px 20px 60px 60px;
-    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 16px;
+    box-sizing: border-box;
 `
 
 
 
-function Home({username}) {
+export const Home = ({username}) => {
 
     const sample_grade = {
-        image: null,
         name: "8 A grade",
-        description: "Environmental Science"
+        description: "Environmental Science",
+        image: "/classroom_pic.png",
     }
 
     return(
-        <HomeWrapper>
-            <h1>Welcome {username}</h1>
-            <ClassCard classroom={sample_grade}/>
-        </HomeWrapper>
+        <>
+            <HomeWrapper>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+
+            </HomeWrapper>
+        </>
+
     );
 }
-
-export default Home;

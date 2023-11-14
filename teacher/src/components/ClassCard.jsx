@@ -4,8 +4,13 @@ import styled from 'styled-components';
 
 const CardWrapper = styled.div`
     width: 350px;
-    height: 250px;
     background-color: #D3D3D3;
+    padding: 10px;
+`
+
+const ClassImg = styled.img`
+    height: 100%;
+    width: 100%;
 `
 /*
 * This is a functional component that renders a class card.
@@ -13,20 +18,19 @@ const CardWrapper = styled.div`
 * grades and assignments.
 */
 
-function ClassCard({classroom}) {
+export const ClassCard = ({classroom}) => {
     return (
         <CardWrapper>
             <div className="image-container">
-                <img src={classname.image} alt="" />
+                <ClassImg src={classroom.image} alt="" />
             </div>
             <div className="classCard-info">
-                <h3>{classname.name}</h3>
+                <h3>{classroom.name}</h3>
                 <div className="classCard-description">
-                    <p>{classname.description}</p>
+                    <p>{classroom.description}</p>
                 </div>
             </div>
         </CardWrapper>
     )
 }
 
-export default ClassCard;

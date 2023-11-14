@@ -62,7 +62,7 @@ const SaveButton = styled.button`
   border-radius: 4px;
 `;
 
-function ProfilePage({setUsername}) {
+export const ProfilePage = ({setUsername}) => {
   const [user,setUser] = React.useState(""); 
   const navigate = useNavigate();
 
@@ -129,5 +129,3 @@ function ProfilePage({setUsername}) {
     </Container>
   );
 }
-
-export default ProfilePage;

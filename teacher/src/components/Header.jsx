@@ -1,26 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import logo from '../assets/Tuba.png';
 
 const headerStyle = {
   backgroundColor: '#fff',
   padding: '0px 0',
   display: 'flex',
+  maxHeight: '100px',
   justifyContent: 'space-between',
   alignItems: 'center',
   borderBottom: '2px solid #000',
 };
-
-const Title = styled(Link)`
-  color: #fff;
-  text-decoration: none;
-  padding-left: 10px;
-  font-size: 48px;
-  font-weight: bold;
-  font-family: 'Pacifico', cursive;
-  margin-top: 20px;
-`;
 
 const LoginButton = styled(Link)`
   background-color: #000;
@@ -53,23 +43,19 @@ const ButtonContainer = styled.div`
 `;
 
 
-function Header() {
+export const Header = () => {
   return (
-    <header style={headerStyle}>
-      <div style={{ display: 'flex', alignItems: 'center', width: '74%' }}>
-        <Title to="/">
-          <img src={logo} alt="Logo" style={{ height: '100px' }} />
-        </Title>
-      </div>
+    <nav style={headerStyle}>
+      <img src={"/Tuba.png"} alt="Logo" style={{ maxHeight: '100px'}} /> {/*max height - to keep logo in boundaries*/}
+      <Link to="/"> Home </Link>
+      <Link to="/"> Help </Link>
+      <Link to="/"> Switch Language </Link>
       
       <ButtonContainer>
         <LoginButton to="/signin">Log In</LoginButton>
         <RegisterButton to="/register">Register</RegisterButton>
       </ButtonContainer>
-    </header>
+    </nav>
   );
 }
 
-export default Header;
-//react-icons/fa
-//styled-components

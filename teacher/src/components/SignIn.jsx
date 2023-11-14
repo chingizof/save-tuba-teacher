@@ -59,16 +59,7 @@ const SaveButton = styled.button`
   border-radius: 4px;
 `;
 
-// const formContainerStyle = {
-//   maxWidth: '400px',
-//   margin: '20px auto',
-//   padding: '20px',
-//   backgroundColor: '#fff',
-//   boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-//   borderRadius: '8px',
-// };
-
-function SignIn({setEmail, setPassword }) {
+export const SignIn = ({setEmail, setPassword }) => {
   const [email, setEmailValue] = useState('');  
   const [password, setPasswordValue] = useState('');
   const navigate = useNavigate();
@@ -108,27 +99,4 @@ function SignIn({setEmail, setPassword }) {
 }
 
 export default SignIn;
-
-/*
-function SignIn() {
-  return (
-    <div style={formContainerStyle}>
-      <h2>Sign In</h2>
-      <form>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div>
-          <label htmlFor="password">Password:</label>
-          <input type="password" id="password" name="password" required />
-        </div>
-        <button type="submit">Sign In</button>
-      </form>
-    </div>
-  );
-  
-}
-*/
-
 
