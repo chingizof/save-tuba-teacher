@@ -42,14 +42,19 @@ const ButtonContainer = styled.div`
   display: flex;
 `;
 
+const headerLink = {
+  color: 'black', 
+  textDecoration: 'none',
+  fontSize: '20px'
+}
 
 export const Header = () => {
   return (
     <nav style={headerStyle}>
       <img src={"/Tuba.png"} alt="Logo" style={{ maxHeight: '100px'}} /> {/*max height - to keep logo in boundaries*/}
-      <Link to="/"> Home </Link>
-      <Link to="/"> Help </Link>
-      <Link to="/"> Switch Language </Link>
+      <Link style={ headerLink } to="/"> Home </Link>
+      <Link style={ headerLink } to="/"> Help </Link>
+      <Link style={ headerLink } to="/"> Switch Language </Link>
       
       <ButtonContainer>
         <LoginButton to="/signin">Log In</LoginButton>

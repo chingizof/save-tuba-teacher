@@ -31,6 +31,18 @@ export const Home = ({username}) => {
                 <ClassCard classroom={sample_grade}/>
                 <ClassCard classroom={sample_grade}/>
                 <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
+                <ClassCard classroom={sample_grade}/>
 
             </HomeWrapper>
         </>
