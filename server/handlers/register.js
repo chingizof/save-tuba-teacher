@@ -1,5 +1,5 @@
 import {collection, addDoc } from 'firebase/firestore'
-import { usersCollection, auth } from './firebase.js';
+import { usersCollection, auth } from '../db/connect.js';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail, signOut } from "firebase/auth";
 
 

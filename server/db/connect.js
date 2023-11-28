@@ -1,6 +1,6 @@
 //this file connects to firebase
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { collection, getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
@@ -17,6 +17,7 @@ const firebaseConfig = {
   const app = initializeApp(firebaseConfig)
   const db = getFirestore(app)
   const auth = getAuth(app)
+  const usersCollection = collection(db, "users")
 
 
-  export { db, auth }
+  export { db, auth, usersCollection }

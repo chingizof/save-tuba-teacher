@@ -11,9 +11,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
-app.get('/api/register', (req, res) => {
-    
-})
+// app.get('/api/register', (req, res) => {
+
+// })
 
 // app.get('/api/result',  (req, res) => {
 //     getDB().
