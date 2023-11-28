@@ -2,7 +2,7 @@ import {collection, addDoc } from 'firebase/firestore'
 import { usersCollection, auth } from '../db/connect.js';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail, signOut } from "firebase/auth";
 
-
+//registers a user with name, email, and password
 export const registerWithEmailAndPassword = async (name, email, password) => {
     try {
     console.log("1", name, email,password)

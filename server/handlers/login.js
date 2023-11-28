@@ -2,6 +2,8 @@ import {collection, addDoc } from 'firebase/firestore'
 import { usersCollection, auth } from './firebase.js';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail, signOut } from "firebase/auth";
 
+
+//doesn't work yet
 export const logInWithEmailAndPassword = async (email, password) => {
     try {
       const res = await signInWithEmailAndPassword(auth, email, password);
