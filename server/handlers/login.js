@@ -6,8 +6,10 @@ export const logInWithEmailAndPassword = async (email, password) => {
     try {
       const res = await signInWithEmailAndPassword(auth, email, password);
       const user = res.user
+      // return user.uid should be after the login is successful
+      console.log("Login Successful")
       return user.uid
-      console.log("Successsssss")
+      //error handling
     } catch (err) {
       console.error(err);
     }
